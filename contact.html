@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wabi Housing</title>
+    <meta name="description" content="Wabi Housingへのお問い合わせはこちら。不動産に関するご相談、内見のご予約など、お気軽にご連絡ください。東京、神奈川エリアに対応。">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wabi-housing.com/contact">
+    <meta property="og:title" content="Contact Us | Wabi Housing">
+    <meta property="og:description" content="Wabi Housingへのお問い合わせはこちら。不動産に関するご相談、内見のご予約など、お気軽にご連絡ください。東京、神奈川エリアに対応。">
+    <meta property="og:image"
+        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
+    <meta property="og:site_name" content="wabi housing">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.wabi-housing.com/contact">
+    <meta property="twitter:title" content="Contact Us | Wabi Housing">
+    <meta property="twitter:description"
+        content="Wabi Housingへのお問い合わせはこちら。不動産に関するご相談、内見のご予約など、お気軽にご連絡ください。東京、神奈川エリアに対応。">
+    <meta property="twitter:image"
+        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
+
+    <link rel="icon"
+        href="https://images.squarespace-cdn.com/content/v1/681dce5b5899ce02121c725a/a1ec1587-30b8-4dc4-b47f-f0eca1ba4f2c/favicon.ico?format=100w">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--color-text-secondary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--color-text-primary);
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        .submit-btn {
+            background-color: var(--color-accent);
+            color: var(--color-bg-primary);
+            border: none;
+            padding: 1rem 3rem;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: opacity 0.3s;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Wabi Housing</div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="services.html">サービス</a></li>
+                    <li><a href="asset-types.html">物件種別</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <a href="en/contact.html">EN</a>
+                    <span>|</span>
+                    <a href="#" class="active">JA</a>
+                    <span>|</span>
+                    <a href="zh/contact.html">ZH</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" style="padding-top: 150px;">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h1>お問い合わせ・ご相談</h1>
+                    <p style="margin-bottom: 2rem;">
+                        Wabi Housingのサービスについてのご質問、物件のご相談、売却の査定依頼など、お気軽にお問い合わせください。
+                    </p>
+                    <p>私たちのチームが、お客様一人ひとりのニーズに合わせて丁寧に対応いたします。</p>
+                    <br>
+                    <h3>所在地</h3>
+                    <p>Shibuya, Tokyo, Japan</p>
+                    <p><a href="mailto:info@wabi-housing.com"
+                            style="color: var(--color-accent);">info@wabi-housing.com</a></p>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">件名</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="submit-btn" disabled>送信する (デモ)</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <h4>Wabi Housing</h4>
+            <p>Shibuya, Tokyo, Japan</p>
+            <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
+            <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 Wabi Housing. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
