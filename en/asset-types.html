@@ -2,308 +2,218 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Types & Needs | Wabi Housing</title>
+    <meta name="description" content="ホテル、集合住宅、高級レジデンス、土地など、Wabi Housingが取り扱う多彩な物件タイプと、売買ニーズへの対応について提供します。">
 
-  <title>Asset Types & Needs | wabi housing</title>
-  <meta name="description"
-    content="Explore the asset types wabi housing brokers across Japan—hotels, multifamily, luxury residences, land, and commercial—plus common buy-side and sell-side needs." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wabi-housing.com/asset-types">
+    <meta property="og:title" content="Asset Types & Needs | Wabi Housing">
+    <meta property="og:description" content="ホテル、集合住宅、高級レジデンス、土地など、Wabi Housingが取り扱う多彩な物件タイプと、売買ニーズへの対応について提供します。">
+    <meta property="og:image"
+        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
+    <meta property="og:site_name" content="wabi housing">
+    <meta property="og:locale" content="ja_JP">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.wabi-housing.com/asset-types" />
-  <meta property="og:title" content="Asset Types & Needs | wabi housing" />
-  <meta property="og:description"
-    content="Explore the asset types wabi housing brokers across Japan—hotels, multifamily, luxury residences, land, and commercial—plus common buy-side and sell-side needs." />
-  <meta property="og:image"
-    content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w" />
-  <meta property="og:site_name" content="wabi housing" />
-  <meta property="og:locale" content="en_US" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.wabi-housing.com/asset-types">
+    <meta property="twitter:title" content="Asset Types & Needs | Wabi Housing">
+    <meta property="twitter:description" content="ホテル、集合住宅、高級レジデンス、土地など、Wabi Housingが取り扱う多彩な物件タイプと、売買ニーズへの対応について提供します。">
+    <meta property="twitter:image"
+        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://www.wabi-housing.com/asset-types" />
-  <meta property="twitter:title" content="Asset Types & Needs | wabi housing" />
-  <meta property="twitter:description"
-    content="Explore the asset types wabi housing brokers across Japan—hotels, multifamily, luxury residences, land, and commercial—plus common buy-side and sell-side needs." />
-  <meta property="twitter:image"
-    content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w" />
+    <link rel="icon"
+        href="https://images.squarespace-cdn.com/content/v1/681dce5b5899ce02121c725a/a1ec1587-30b8-4dc4-b47f-f0eca1ba4f2c/favicon.ico?format=100w">
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        .asset-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
 
-  <link rel="icon"
-    href="https://images.squarespace-cdn.com/content/v1/681dce5b5899ce02121c725a/a1ec1587-30b8-4dc4-b47f-f0eca1ba4f2c/favicon.ico?format=100w" />
-  <link rel="stylesheet" href="../styles/main.css" />
+        .asset-item {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--color-border);
+            transition: transform 0.3s;
+        }
 
-  <style>
-    .asset-list {
-      list-style: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
+        .asset-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-accent);
+        }
 
-    .asset-item {
-      background: rgba(255, 255, 255, 0.6);
-      padding: 2rem;
-      border-radius: 8px;
-      text-align: center;
-      border: 1px solid var(--color-border);
-      transition: transform 0.3s, border-color 0.3s;
-    }
-
-    .asset-item:hover {
-      transform: translateY(-5px);
-      border-color: var(--color-accent);
-    }
-
-    .needs-section {
-      background-color: var(--color-bg-secondary);
-      padding: 3rem;
-      border-radius: 8px;
-      margin-top: 4rem;
-    }
-
-    .subhead {
-      text-align: center;
-      max-width: 860px;
-      margin: 0 auto 3rem;
-      line-height: 1.7;
-      color: var(--color-text-secondary);
-    }
-
-    .pill {
-      display: inline-block;
-      font-size: 0.85rem;
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      background: rgba(255, 255, 255, 0.06);
-      color: var(--color-text-secondary);
-      margin-top: 0.75rem;
-    }
-
-    .needs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 3rem;
-      margin-top: 1.5rem;
-    }
-
-    .needs-card h3 {
-      margin-bottom: 1.25rem;
-      border-bottom: 2px solid var(--color-accent);
-      display: inline-block;
-      padding-bottom: 0.25rem;
-    }
-
-    .checklist {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-    }
-
-    .excerpt-grid {
-      margin-top: 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .excerpt ul {
-      list-style: disc;
-      padding-left: 1.2rem;
-      line-height: 1.7;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .muted {
-      color: var(--color-text-secondary);
-    }
-  </style>
+        .needs-section {
+            background-color: var(--color-bg-secondary);
+            padding: 3rem;
+            border-radius: 8px;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">wabi housing</div>
-
-      <nav class="nav-desktop">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="asset-types.html" class="active">Asset Types</a></li>
-        </ul>
-        <div class="lang-switch">
-          <a href="/en/asset-types.html" class="active">EN</a>
-          <span>|</span>
-          <a href="/asset-types.html">JA</a>
-          <span>|</span>
-          <a href="/zh/asset-types.html">ZH</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Wabi Housing</div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="asset-types.html" class="active">Asset Types</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <a href="#" class="active">EN</a>
+                    <span>|</span>
+                    <a href="../asset-types.html">JA</a>
+                    <span>|</span>
+                    <a href="../zh/asset-types.html">ZH</a>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="asset-types.html">Asset Types</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <a href="#" class="active">EN</a>
+                    <span>|</span>
+                    <a href="../asset-types.html">JA</a>
+                    <span>|</span>
+                    <a href="../zh/asset-types.html">ZH</a>
+                </div>
+            </nav>
         </div>
-      </nav>
+    </header>
 
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <main>
+        <section class="section" style="padding-top: 150px;">
+            <div class="container">
+                <h1 class="section-title">Our Asset Types</h1>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+                    We specialize in brokering a wide range of premium properties for residential and investment
+                    purposes.
+                </p>
 
-      <nav class="nav-mobile">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="asset-types.html" class="active">Asset Types</a></li>
-        </ul>
-        <div class="lang-switch">
-          <a href="/en/asset-types.html" class="active">EN</a>
-          <span>|</span>
-          <a href="/asset-types.html">JA</a>
-          <span>|</span>
-          <a href="/zh/asset-types.html">ZH</a>
+                <ul class="asset-list">
+                    <li class="asset-item">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Hotels</h3>
+                        <p>Boutique hotels, ryokans, and resort developments.</p>
+                    </li>
+                    <li class="asset-item">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Multi-family Residences</h3>
+                        <p>Entire apartment buildings for investment yield.</p>
+                    </li>
+                    <li class="asset-item">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Private Residences</h3>
+                        <p>Luxury condos, datached homes, and vacation villas.</p>
+                    </li>
+                    <li class="asset-item">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Land</h3>
+                        <p>Development sites in prime locations.</p>
+                    </li>
+                    <li class="asset-item">
+                        <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Commercial</h3>
+                        <p>Office buildings and retail spaces.</p>
+                    </li>
+                </ul>
+
+                <div class="needs-section">
+                    <h2 class="section-title">Buying & Selling Needs</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+                        <div>
+                            <h3
+                                style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-accent); display: inline-block;">
+                                Looking to Buy?</h3>
+                            <p style="margin-bottom: 1rem;">We help you find off-market gems and handle the complexities
+                                of purchasing in Japan.</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;">&#10003; Curated property search</li>
+                                <li style="margin-bottom: 0.5rem;">&#10003; Market price analysis</li>
+                                <li style="margin-bottom: 0.5rem;">&#10003; Due diligence support</li>
+                            </ul>
+                            <a href="contact.html" class="btn" style="margin-top: 1.5rem;">Request Consultation</a>
+                        </div>
+                        <div>
+                            <h3
+                                style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--color-accent); display: inline-block;">
+                                Looking to Sell?</h3>
+                            <p style="margin-bottom: 1rem;">Connect with our network of international investors and
+                                high-net-worth individuals.</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;">&#10003; Property valuation</li>
+                                <li style="margin-bottom: 0.5rem;">&#10003; Global marketing strategy</li>
+                                <li style="margin-bottom: 0.5rem;">&#10003; Negotiation management</li>
+                            </ul>
+                            <a href="contact.html" class="btn" style="margin-top: 1.5rem;">List With Us</a>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h3
+                                style="margin-bottom: 1rem; border-bottom: 2px solid var(--color-accent); display: inline-block;">
+                                Buy-Side Needs (excerpt)</h3>
+                            <ul style="list-style: disc; padding-left: 1.2rem; line-height: 1.6; display: flex; flex-direction: column; gap: 0.75rem;">
+                                <li><strong>Hotels</strong>: ¥2–20B. Tokyo 23 wards, Osaka, Kyoto, Fukuoka, Sapporo, Nagoya. Inbound-heavy locations, 50–150 keys, OP change welcome.</li>
+                                <li><strong>Residential (bulk/entire)</strong>: ¥0.1–10B (mainly ¥0.5–2.5B). Akihabara, Tokyo 23 wards, Osaka, Fukuoka, Sapporo, Nagoya. Minpaku-convertible welcome.</li>
+                                <li><strong>Office / Retail buildings</strong>: ¥0.5–5B (mainly ¥1–3B). Core 5 wards, Akihabara, Ikebukuro. Vacant/old OK; hotel/resi conversion popular.</li>
+                                <li><strong>Land</strong>: ¥0.1–10B+. Azabu, Shibuya, Chiyoda, Shinjuku, 23-ward stations, Osaka CBD. Efficiency of frontage/FAR valued.</li>
+                                <li><strong>Logistics</strong>: ¥2–50B. Greater Tokyo, Osaka, Nagoya, Fukuoka logistics areas. Stable CF focus; factory sites considered.</li>
+                                <li><strong>Houses / Condos</strong>: ¥0.05–5B. Shibuya/Azabu/Akasaka. Vacant/leased/OC OK, 1LDK+.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                style="margin-bottom: 1rem; border-bottom: 2px solid var(--color-accent); display: inline-block;">
+                                Sell-Side Needs (excerpt)</h3>
+                            <ul style="list-style: disc; padding-left: 1.2rem; line-height: 1.6; display: flex; flex-direction: column; gap: 0.75rem;">
+                                <li>Omotesando building (¥1.5B) / Hatsudai minpaku house, gross yield 10.5% (¥450M)</li>
+                                <li>Higashi-Azabu 9-room hotel (¥1.8B) / Moto-Azabu land 96 tsubo (¥1.8B)</li>
+                                <li>Yoyogi-Oyama new condo units (from ¥290M) / Akihabara vacant bldg ~280㎡ (¥460M)</li>
+                                <li>Prime central condos (¥200M+) / Hakuba land (¥9.0B+)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <h4>Wabi Housing</h4>
+            <p>Shibuya, Tokyo, Japan</p>
+            <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/wabi-housing?_l=ja_JP" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/people/Wabi-housing/61576564018433/?locale=ja_JP"
+                    target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/wabi_housing/" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@wabi_housing" target="_blank">TikTok</a>
+                <a href="https://www.youtube.com/@wabi_housing" target="_blank">YouTube</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 Wabi Housing. All Rights Reserved.
+            </p>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="section" style="padding-top: 150px;">
-      <div class="container">
-        <h1 class="section-title">Asset Types We Broker</h1>
-        <p class="subhead">
-          We broker a wide range of premium residential and investment-grade assets across Japan.
-          From discreet off-market opportunities to structured transactions, we support the full lifecycle—
-          sourcing, underwriting, negotiation, and closing.
-        </p>
-
-        <ul class="asset-list">
-          <li class="asset-item">
-            <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Hotels</h3>
-            <p>Boutique hotels, ryokans, and resort developments</p>
-            <span class="pill">Inbound-driven locations • 50–150 keys</span>
-          </li>
-          <li class="asset-item">
-            <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Multi-family</h3>
-            <p>Entire apartment buildings for stable yield and value-add</p>
-            <span class="pill">Core wards • Regional hubs • Asset management ready</span>
-          </li>
-          <li class="asset-item">
-            <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Private Residences</h3>
-            <p>Luxury condos, detached homes, and vacation villas</p>
-            <span class="pill">Prime neighborhoods • 1LDK+ • OC/leased OK</span>
-          </li>
-          <li class="asset-item">
-            <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Land</h3>
-            <p>Development sites in prime locations</p>
-            <span class="pill">Frontage • FAR/coverage • Station access</span>
-          </li>
-          <li class="asset-item">
-            <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Commercial</h3>
-            <p>Office and retail buildings, including repositioning plays</p>
-            <span class="pill">Vacant/older OK • Conversion to hotel/resi</span>
-          </li>
-        </ul>
-
-        <div class="needs-section">
-          <h2 class="section-title">Buying & Selling Needs</h2>
-          <p class="muted" style="text-align:center; max-width: 900px; margin: 0 auto 1.5rem; line-height: 1.7;">
-            Every mandate is different. Below are common requirements we see from our global network of investors and
-            property owners. If your criteria is more specific, we can tailor sourcing and outreach accordingly.
-          </p>
-
-          <div class="needs-grid">
-            <div class="needs-card">
-              <h3>Looking to Buy?</h3>
-              <p style="margin-bottom: 1rem;">
-                We source on-market and off-market opportunities and guide you through Japan’s transaction process with
-                clarity and speed.
-              </p>
-              <ul class="checklist">
-                <li>&#10003; Curated deal sourcing (on/off-market)</li>
-                <li>&#10003; Pricing & underwriting support</li>
-                <li>&#10003; Due diligence & closing coordination</li>
-              </ul>
-              <a href="contact.html" class="btn" style="margin-top: 1.5rem;">Request Consultation</a>
-            </div>
-
-            <div class="needs-card">
-              <h3>Looking to Sell?</h3>
-              <p style="margin-bottom: 1rem;">
-                We position your asset to qualified international buyers, manage outreach discreetly, and run a clean
-                negotiation process.
-              </p>
-              <ul class="checklist">
-                <li>&#10003; Valuation & sale strategy</li>
-                <li>&#10003; Global buyer reach & marketing</li>
-                <li>&#10003; Negotiation and execution management</li>
-              </ul>
-              <a href="contact.html" class="btn" style="margin-top: 1.5rem;">List With Us</a>
-            </div>
-          </div>
-
-          <div class="excerpt-grid">
-            <div class="excerpt">
-              <h3 style="margin-bottom: 1rem; border-bottom: 2px solid var(--color-accent); display: inline-block;">
-                Buy-Side Needs (Sample)</h3>
-              <ul>
-                <li><strong>Hotels</strong>: ¥2–20B. Tokyo 23 wards, Osaka, Kyoto, Fukuoka, Sapporo, Nagoya. Inbound-heavy
-                  locations, 50–150 keys; operator change welcome.</li>
-                <li><strong>Residential (bulk/entire)</strong>: ¥0.1–10B (often ¥0.5–2.5B). Tokyo 23 wards, Osaka, Fukuoka,
-                  Sapporo, Nagoya. Minpaku-convertible assets welcome.</li>
-                <li><strong>Office / Retail</strong>: ¥0.5–5B (often ¥1–3B). Core 5 wards, Akihabara, Ikebukuro. Vacant/older
-                  buildings OK; hotel/resi conversion common.</li>
-                <li><strong>Land</strong>: ¥0.1–10B+. Azabu, Shibuya, Chiyoda, Shinjuku; near major 23-ward stations; Osaka
-                  CBD. Efficient frontage/FAR preferred.</li>
-                <li><strong>Logistics</strong>: ¥2–50B. Greater Tokyo / Osaka / Nagoya / Fukuoka logistics corridors. Stable CF
-                  focus; factory sites considered.</li>
-                <li><strong>Houses / Condos</strong>: ¥0.05–5B. Shibuya / Azabu / Akasaka. Vacant/leased/OC OK; 1LDK+.</li>
-              </ul>
-            </div>
-
-            <div class="excerpt">
-              <h3 style="margin-bottom: 1rem; border-bottom: 2px solid var(--color-accent); display: inline-block;">
-                Sell-Side Needs (Sample)</h3>
-              <ul>
-                <li>Omotesando building (¥1.5B) / Hatsudai minpaku house (¥450M, ~10.5% gross yield)</li>
-                <li>Higashi-Azabu 9-room hotel (¥1.8B) / Moto-Azabu land 96 tsubo (¥1.8B)</li>
-                <li>Yoyogi-Oyama new condo units (from ¥290M) / Akihabara vacant building ~280㎡ (¥460M)</li>
-                <li>Prime central condos (¥200M+) / Hakuba land (¥9.0B+)</li>
-              </ul>
-              <p class="muted" style="margin-top: 1rem; line-height: 1.7;">
-                <strong>Note:</strong> The above is illustrative. We can run discreet buyer discovery for unique assets,
-                including value-add, repositioning, and cross-border structures.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-content">
-      <h4>wabi housing</h4>
-      <p>Shibuya, Tokyo, Japan</p>
-      <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/company/wabi-housing" target="_blank">LinkedIn</a>
-        <a href="https://www.facebook.com/people/Wabi-housing/61576564018433/?locale=ja_JP" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/wabi_housing/" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@wabi_housing" target="_blank">TikTok</a>
-        <a href="https://www.youtube.com/@wabi_housing" target="_blank">YouTube</a>
-      </div>
-      <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 wabi housing. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script src="../scripts/main.js"></script>
+    </footer>
+    <script src="../scripts/main.js"></script>
 </body>
 
 </html>
