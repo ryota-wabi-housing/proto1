@@ -2,173 +2,468 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | wabi housing</title>
-    <meta name="description" content="wabi housingへのお問い合わせはこちら。不動産に関するご相談、内見のご予約など、お気軽にご連絡ください。東京、神奈川エリアに対応。">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | wabi housing</title>
+  <meta name="description"
+    content="Contact wabi housing for property consultations, viewings, and support in Tokyo & Kanagawa. We’ll get back to you as soon as possible." />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.wabi-housing.com/contact">
-    <meta property="og:title" content="Contact Us | wabi housing">
-    <meta property="og:description" content="wabi housingへのお問い合わせはこちら。不動産に関するご相談、内見のご予約など、お気軽にご連絡ください。東京、神奈川エリアに対応。">
-    <meta property="og:image"
-        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
-    <meta property="og:site_name" content="wabi housing">
-    <meta property="og:locale" content="ja_JP">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.wabi-housing.com/contact" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.wabi-housing.com/contact">
-    <meta property="twitter:title" content="Contact Us | wabi housing">
-    <meta property="twitter:description"
-        content="wabi housingへのお問い合わせはこちら。不動産に関するご相談、内見のご予約など、お気軽にご連絡ください。東京、神奈川エリアに対応。">
-    <meta property="twitter:image"
-        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.wabi-housing.com/contact" />
+  <meta property="og:title" content="Contact Us | wabi housing" />
+  <meta property="og:description"
+    content="Contact wabi housing for property consultations, viewings, and support in Tokyo & Kanagawa. We’ll get back to you as soon as possible." />
+  <meta property="og:image"
+    content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w" />
+  <meta property="og:site_name" content="wabi housing" />
+  <meta property="og:locale" content="en_US" />
 
-    <link rel="icon"
-        href="https://images.squarespace-cdn.com/content/v1/681dce5b5899ce02121c725a/a1ec1587-30b8-4dc4-b47f-f0eca1ba4f2c/favicon.ico?format=100w">
-    <link rel="stylesheet" href="../styles/main.css">
-    <style>
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.wabi-housing.com/contact" />
+  <meta name="twitter:title" content="Contact Us | wabi housing" />
+  <meta name="twitter:description"
+    content="Contact wabi housing for property consultations, viewings, and support in Tokyo & Kanagawa. We’ll get back to you as soon as possible." />
+  <meta name="twitter:image"
+    content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w" />
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
+  <link rel="icon"
+    href="https://images.squarespace-cdn.com/content/v1/681dce5b5899ce02121c725a/a1ec1587-30b8-4dc4-b47f-f0eca1ba4f2c/favicon.ico?format=100w" />
+  <link rel="stylesheet" href="../styles/main.css" />
 
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--color-text-secondary);
-        }
+  <style>
+    .contact-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--color-text-primary);
-            font-family: inherit;
-        }
+    @media (min-width: 900px) {
+      .contact-wrap {
+        grid-template-columns: 1fr 1.15fr;
+        gap: 3rem;
+        align-items: start;
+      }
+    }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--color-accent);
-        }
+    .contact-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 1.75rem;
+    }
 
-        .submit-btn {
-            background-color: var(--color-accent);
-            color: var(--color-bg-primary);
-            border: none;
-            padding: 1rem 3rem;
-            cursor: pointer;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: opacity 0.3s;
-        }
+    .contact-card h2 {
+      margin: 0 0 0.75rem 0;
+      font-size: 1.25rem;
+    }
 
-        .submit-btn:hover {
-            opacity: 0.9;
-        }
-    </style>
+    .contact-card p {
+      margin: 0.25rem 0;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+    }
+
+    .contact-actions {
+      margin-top: 1rem;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .contact-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.95rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--color-text-primary);
+      text-decoration: none;
+      transition: opacity 0.25s, border-color 0.25s;
+      letter-spacing: 0.04em;
+    }
+
+    .contact-actions a:hover {
+      opacity: 0.92;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-actions a.primary {
+      background: var(--color-accent);
+      color: var(--color-bg-primary);
+      border-color: transparent;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .contact-form {
+      max-width: 100%;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 650px) {
+      .form-grid.two {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 0.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--color-text-primary);
+      font-family: inherit;
+      border-radius: 0;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+
+    .help-text {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    .submit-row {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .submit-btn {
+      width: 100%;
+      max-width: 360px;
+      background-color: var(--color-accent);
+      color: var(--color-bg-primary);
+      border: none;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      transition: opacity 0.25s, transform 0.1s;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.92;
+    }
+
+    .submit-btn:active {
+      transform: translateY(1px);
+    }
+
+    .submit-btn[disabled] {
+      opacity: 0.55;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .status {
+      display: none;
+      width: 100%;
+      max-width: 600px;
+      padding: 0.85rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+    }
+
+    .status.show {
+      display: block;
+    }
+
+    /* Honeypot (spam trap) */
+    .hp-field {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo">wabi housing</div>
-            <nav class="nav-desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="asset-types.html">Asset Types</a></li>
-                </ul>
-                <div class="lang-switch">
-                    <a href="#" class="active">EN</a>
-                    <span>|</span>
-                    <a href="../contact.html">JA</a>
-                    <span>|</span>
-                    <a href="../zh/contact.html">ZH</a>
-                </div>
-            </nav>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="nav-mobile">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="asset-types.html">Asset Types</a></li>
-                </ul>
-                <div class="lang-switch">
-                    <a href="#" class="active">EN</a>
-                    <span>|</span>
-                    <a href="../contact.html">JA</a>
-                    <span>|</span>
-                    <a href="../zh/contact.html">ZH</a>
-                </div>
-            </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">wabi housing</div>
+
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="asset-types.html">Asset Types</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="#" class="active" aria-current="page">EN</a>
+          <span>|</span>
+          <a href="../contact.html">JA</a>
+          <span>|</span>
+          <a href="../zh/contact.html">ZH</a>
         </div>
-    </header>
+      </nav>
 
-    <main>
-        <section class="section" style="padding-top: 150px;">
-            <div class="container">
-                <h1 class="section-title">Contact Us</h1>
+      <div class="menu-toggle" aria-label="Open menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
 
-                <div style="text-align: center; margin-bottom: 3rem;">
-                    <p>Shibuya, Tokyo, Japan</p>
-                    <p><a href="mailto:info@wabi-housing.com"
-                            style="color: var(--color-accent);">info@wabi-housing.com</a></p>
-                </div>
+      <nav class="nav-mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="asset-types.html">Asset Types</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="#" class="active" aria-current="page">EN</a>
+          <span>|</span>
+          <a href="../contact.html">JA</a>
+          <span>|</span>
+          <a href="../zh/contact.html">ZH</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div style="text-align: center;">
-                            <button type="submit" class="submit-btn" disabled>Send Message (Demo Only)</button>
-                        </div>
-                    </form>
-                </div>
+  <main>
+    <section class="section" style="padding-top: 150px;">
+      <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+
+        <div class="contact-wrap">
+          <!-- Left: contact info -->
+          <aside class="contact-card" aria-label="Contact information">
+            <h2>Get in touch</h2>
+            <p>For consultations, property viewings, or general questions, please reach out anytime.</p>
+
+            <div style="margin-top: 1rem;">
+              <p><strong style="color: var(--color-text-primary);">Location</strong></p>
+              <p>Shibuya, Tokyo, Japan</p>
+
+              <p style="margin-top: 0.75rem;"><strong style="color: var(--color-text-primary);">Email</strong></p>
+              <p>
+                <a href="mailto:info@wabi-housing.com" style="color: var(--color-accent); text-decoration: none;">
+                  info@wabi-housing.com
+                </a>
+              </p>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="container footer-content">
-            <h4>wabi housing</h4>
-            <p>Shibuya, Tokyo, Japan</p>
-            <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
-            <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 wabi housing. All Rights Reserved.
+            <div class="contact-actions">
+              <a class="primary" href="mailto:info@wabi-housing.com?subject=Inquiry%20from%20wabi-housing.com">
+                Email Us
+              </a>
+              <a href="../services.html">See Our Services</a>
+            </div>
+
+            <p class="help-text">
+              Typical response time: 1–2 business days (Japan time).
             </p>
+          </aside>
+
+          <!-- Right: form -->
+          <div class="contact-card">
+            <h2>Send a message</h2>
+            <p class="help-text" style="margin-top: -0.25rem;">
+              Fill out the form below and we’ll respond by email.
+            </p>
+
+            <!--
+              OPTION A (recommended): Formspree / similar endpoint
+              Replace the action URL with your real endpoint.
+              Example: https://formspree.io/f/XXXXXX
+            -->
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/REPLACE_ME" method="POST"
+              novalidate>
+
+              <!-- Honeypot -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="off" />
+              </div>
+
+              <div class="form-grid two">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required />
+                </div>
+              </div>
+
+              <div class="form-grid two" style="margin-top: 0.75rem;">
+                <div class="form-group">
+                  <label for="topic">Topic</label>
+                  <select id="topic" name="topic">
+                    <option value="General">General inquiry</option>
+                    <option value="Viewing">Schedule a viewing</option>
+                    <option value="Buying">Buying support</option>
+                    <option value="Selling">Selling support</option>
+                    <option value="Visa">Visa / relocation</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="(Optional)" />
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top: 0.75rem;">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required
+                  placeholder="Tell us what you’re looking for (area, budget, timeline, etc.)"></textarea>
+              </div>
+
+              <!-- Optional redirect after submission (Formspree supports this) -->
+              <input type="hidden" name="_subject" value="New inquiry from wabi-housing.com (EN Contact)" />
+              <input type="hidden" name="_format" value="plain" />
+
+              <div class="submit-row">
+                <button id="submitBtn" type="submit" class="submit-btn" disabled>
+                  Send Message
+                </button>
+
+                <div id="status" class="status" role="status" aria-live="polite"></div>
+
+                <p class="help-text" style="text-align:center;">
+                  By sending, you agree to be contacted by email regarding your inquiry.
+                </p>
+              </div>
+            </form>
+
+            <!--
+              OPTION B (no service): mailto fallback
+              If you don't want Formspree, set the form action to a mail handler on your server,
+              or remove action and use the mailto button on the left.
+            -->
+          </div>
         </div>
-    </footer>
-    <script src="../scripts/main.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <h4>wabi housing</h4>
+      <p>Shibuya, Tokyo, Japan</p>
+      <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
+      <p style="margin-top: 2rem; font-size: 0.8rem; color: #666;">&copy; 2025 wabi housing. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+
+  <script>
+    (function () {
+      const form = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const statusEl = document.getElementById("status");
+
+      const requiredIds = ["name", "email", "message"];
+      const requiredEls = requiredIds.map((id) => document.getElementById(id));
+
+      function validate() {
+        const allFilled = requiredEls.every((el) => (el.value || "").trim().length > 0);
+        const emailEl = document.getElementById("email");
+        const emailOk = emailEl.checkValidity();
+        submitBtn.disabled = !(allFilled && emailOk);
+      }
+
+      requiredEls.forEach((el) => el.addEventListener("input", validate));
+      document.getElementById("email").addEventListener("input", validate);
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Honeypot check
+        const hp = document.getElementById("company");
+        if (hp && hp.value && hp.value.trim().length > 0) return;
+
+        submitBtn.disabled = true;
+        statusEl.classList.remove("show");
+        statusEl.textContent = "";
+
+        // If you didn't replace the Formspree URL, show a helpful message
+        if ((form.action || "").includes("REPLACE_ME")) {
+          statusEl.textContent =
+            "Form is not configured yet. Replace the form action URL with your form endpoint (e.g., Formspree). For now, please email info@wabi-housing.com.";
+          statusEl.classList.add("show");
+          validate();
+          return;
+        }
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch(form.action, rememberRedirect(form.method), {
+            method: form.method || "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+          });
+
+          if (res.ok) {
+            form.reset();
+            statusEl.textContent = "Thank you — your message has been sent. We’ll reply by email soon.";
+            statusEl.classList.add("show");
+          } else {
+            statusEl.textContent = "Sorry — something went wrong. Please try again or email info@wabi-housing.com.";
+            statusEl.classList.add("show");
+          }
+        } catch (err) {
+          statusEl.textContent = "Network error. Please try again or email info@wabi-housing.com.";
+          statusEl.classList.add("show");
+        } finally {
+          validate();
+        }
+      });
+
+      // keeps method safe even if empty
+      function rememberRedirect(method) {
+        return (method || "POST").toUpperCase();
+      }
+
+      validate();
+    })();
+  </script>
 </body>
 
 </html>
