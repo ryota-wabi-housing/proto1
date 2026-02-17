@@ -1,201 +1,152 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asset Types & Needs | wabi housing</title>
+
+    <title>wabi housing | Luxury Japanese Real Estate</title>
     <meta name="description"
-        content="ホテル、集合住宅、高級レジデンス、土地など、wabi housingが取り扱う多彩な物件タイプと売買ニーズへの対応をご紹介します。">
+        content="wabi housing provides luxury Japanese real estate advisory for global investors and private clients. Hotels, residential, land, and commercial assets across Japan.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.wabi-housing.com/asset-types.html">
-    <meta property="og:title" content="Asset Types & Needs | wabi housing">
+    <meta property="og:url" content="https://www.wabi-housing.com/">
+    <meta property="og:title" content="wabi housing | Luxury Japanese Real Estate">
     <meta property="og:description"
-        content="ホテル、集合住宅、高級レジデンス、土地など、wabi housingが取り扱う多彩な物件タイプと売買ニーズへの対応をご紹介します。">
+        content="Luxury Japanese real estate advisory for global investors and private clients.">
     <meta property="og:image"
-        content="https://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
-    <meta property="og:site_name" content="wabi housing">
-    <meta property="og:locale" content="ja_JP">
+        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.wabi-housing.com/asset-types.html">
-    <meta property="twitter:title" content="Asset Types & Needs | wabi housing">
+    <meta property="twitter:title" content="wabi housing | Luxury Japanese Real Estate">
     <meta property="twitter:description"
-        content="ホテル、集合住宅、高級レジデンス、土地など、wabi housingが取り扱う多彩な物件タイプと売買ニーズへの対応をご紹介します。">
+        content="Luxury Japanese real estate advisory for international investors.">
     <meta property="twitter:image"
-        content="https://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
-
-    <link rel="icon"
-        href="https://images.squarespace-cdn.com/content/v1/681dce5b5899ce02121c725a/a1ec1587-30b8-4dc4-b47f-f0eca1ba4f2c/favicon.ico?format=100w">
+        content="http://static1.squarespace.com/static/681dce5b5899ce02121c725a/t/6874a5f29ec2e15976f7ff05/1752475122887/4.png?format=1500w">
 
     <link rel="stylesheet" href="styles/main.css">
-
-    <style>
-        .asset-list {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .asset-item {
-            background: rgba(255, 255, 255, 0.6);
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid var(--color-border);
-            transition: transform 0.3s ease;
-        }
-
-        .asset-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--color-accent);
-        }
-
-        .needs-section {
-            background-color: var(--color-bg-secondary);
-            padding: 3rem;
-            border-radius: 8px;
-            margin-top: 4rem;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo">wabi housing</div>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">wabi housing</div>
 
-            <nav class="nav-desktop">
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="about.html">会社概要</a></li>
-                    <li><a href="services.html">サービス</a></li>
-                    <li><a href="asset-types.html" class="active">物件種別</a></li>
-                </ul>
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/en/about.html">About</a></li>
+                <li><a href="/en/services.html">Services</a></li>
+                <li><a href="/en/asset-types.html">Asset Types</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+            </ul>
 
-                <div class="lang-switch">
-                    <a href="en/asset-types.html">EN</a>
-                    <span>|</span>
-                    <a href="#" class="active">JA</a>
-                    <span>|</span>
-                    <a href="zh/asset-types.html">ZH</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-        <section class="section" style="padding-top: 150px;">
-            <div class="container">
-
-                <h1 class="section-title">取扱物件タイプ</h1>
-
-                <p style="text-align:center; max-width:800px; margin:0 auto 3rem;">
-                    住宅用から投資用まで、wabi housingでは幅広いプレミアム物件の仲介を専門としています。
-                </p>
-
-                <ul class="asset-list">
-                    <li class="asset-item">
-                        <h3 style="color:var(--color-accent);">ホテル</h3>
-                        <p>ブティックホテル、旅館、リゾート開発</p>
-                    </li>
-
-                    <li class="asset-item">
-                        <h3 style="color:var(--color-accent);">集合住宅</h3>
-                        <p>収益物件としての一棟マンション</p>
-                    </li>
-
-                    <li class="asset-item">
-                        <h3 style="color:var(--color-accent);">プライベートレジデンス</h3>
-                        <p>高級コンドミニアム、戸建て、別荘</p>
-                    </li>
-
-                    <li class="asset-item">
-                        <h3 style="color:var(--color-accent);">土地</h3>
-                        <p>一等地の開発用地</p>
-                    </li>
-
-                    <li class="asset-item">
-                        <h3 style="color:var(--color-accent);">商業施設</h3>
-                        <p>オフィスビルや店舗スペース</p>
-                    </li>
-                </ul>
-
-                <!-- Needs Section -->
-
-                <div class="needs-section">
-
-                    <h2 class="section-title">売買のニーズ</h2>
-
-                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:3rem;">
-
-                        <div>
-                            <h3 style="border-bottom:2px solid var(--color-accent); display:inline-block;">
-                                購入をご希望の方
-                            </h3>
-
-                            <p>市場に出回らない希少物件探しから購入手続きまで包括的にサポートします。</p>
-
-                            <ul style="list-style:none; padding:0;">
-                                <li>✓ 厳選された物件検索</li>
-                                <li>✓ 市場価格分析</li>
-                                <li>✓ デューデリジェンス支援</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn" style="margin-top:1rem;">ご相談はこちら</a>
-                        </div>
-
-                        <div>
-                            <h3 style="border-bottom:2px solid var(--color-accent); display:inline-block;">
-                                売却をご希望の方
-                            </h3>
-
-                            <p>海外投資家ネットワークを活用し、スムーズな売却を実現します。</p>
-
-                            <ul style="list-style:none; padding:0;">
-                                <li>✓ 不動産査定</li>
-                                <li>✓ グローバルマーケティング</li>
-                                <li>✓ 交渉管理</li>
-                            </ul>
-
-                            <a href="contact.html" class="btn" style="margin-top:1rem;">物件掲載のご相談</a>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="lang-switch">
+                <a href="/index.html" class="active">EN</a>
+                <span>|</span>
+                <a href="/ja/index.html">JA</a>
+                <span>|</span>
+                <a href="/zh/index.html">ZH</a>
             </div>
-        </section>
+        </nav>
 
-    </main>
-
-    <footer>
-        <div class="container footer-content">
-            <h4>wabi housing</h4>
-            <p>Shibuya, Tokyo, Japan</p>
-            <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/wabi-housing" target="_blank">LinkedIn</a>
-                <a href="https://www.instagram.com/wabi_housing/" target="_blank">Instagram</a>
-                <a href="https://www.youtube.com/@wabi_housing" target="_blank">YouTube</a>
-            </div>
-
-            <p style="margin-top:2rem; font-size:0.8rem;">
-                &copy; 2025 wabi housing. All Rights Reserved.
-            </p>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </footer>
 
-    <script src="scripts/main.js"></script>
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/en/about.html">About</a></li>
+                <li><a href="/en/services.html">Services</a></li>
+                <li><a href="/en/asset-types.html">Asset Types</a></li>
+                <li><a href="/en/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="lang-switch">
+                <a href="/index.html" class="active">EN</a>
+                <span>|</span>
+                <a href="/ja/index.html">JA</a>
+                <span>|</span>
+                <a href="/zh/index.html">ZH</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero section" style="padding-top:150px;">
+    <div class="container" style="text-align:center;">
+        <h1>Luxury Japanese Real Estate & Cross-Border Advisory</h1>
+        <p style="max-width:800px;margin:2rem auto;">
+            We connect international investors and private clients with
+            premium real estate opportunities across Japan.
+        </p>
+
+        <a href="/en/contact.html" class="btn">Schedule Consultation</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Our Focus</h2>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;">
+            <div>
+                <h3>Hotels & Hospitality</h3>
+                <p>Boutique hotels, ryokan, resort developments.</p>
+            </div>
+            <div>
+                <h3>Residential Investment</h3>
+                <p>Multi-family buildings and premium rental assets.</p>
+            </div>
+            <div>
+                <h3>Luxury Private Residences</h3>
+                <p>High-end condominiums and exclusive villas.</p>
+            </div>
+            <div>
+                <h3>Land & Development</h3>
+                <p>Strategic redevelopment and land acquisition.</p>
+            </div>
+            <div>
+                <h3>Commercial Assets</h3>
+                <p>Office buildings and retail repositioning.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:var(--color-bg-secondary);">
+    <div class="container" style="text-align:center;">
+        <h2>Global Perspective. Local Execution.</h2>
+        <p style="max-width:800px;margin:2rem auto;">
+            wabi housing bridges global capital with Japanese opportunity,
+            providing transparent, strategic, and personalized real estate advisory.
+        </p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <h4>wabi housing</h4>
+        <p>Shibuya, Tokyo, Japan</p>
+        <p><a href="mailto:info@wabi-housing.com">info@wabi-housing.com</a></p>
+        <p style="margin-top:2rem;font-size:0.8rem;color:#666;">
+            &copy; 2025 wabi housing. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="scripts/main.js"></script>
 
 </body>
 </html>
